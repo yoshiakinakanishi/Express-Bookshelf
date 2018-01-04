@@ -15,10 +15,9 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 **１．views/hello/index.ejsに以下のソースを記述
 
 |header1|header2|
-|:--|--:|
-|align left|align right|
+|:--|:--|
 |a|b|
-
+|a|b|
 
 `
       <div>
