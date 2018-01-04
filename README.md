@@ -16,7 +16,7 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 
 
 |プロパティ|意味|
-|:--|--:|
+|:--|:--|
 |page|現在のページ番号|
 |pageCount|ページ数|
 |pageSize|1ページあたりのレコード数|
@@ -39,6 +39,6 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 
 ・paginationプラグインを使えるようにする
 ・クエリパラメータの利用
-・fetcgPageを実行する
+・fetchgPageを実行する
 ・collection.paginationを利用
 
