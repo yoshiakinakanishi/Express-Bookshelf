@@ -12,7 +12,7 @@ SQLite3を使ってデータベースアクセスをおこなうのは今とな�
 
 Expressのpaginationプラグインを使うと高速で実現できる（以下の２つの実装を追加するイメージ）
 
-**１．views/hello/index.ejsに以下のソースを記述
+**１．views/hello/index.ejsに以下のソースを記述**
 
 |プロパティ|意味|
 |:--|:--|
@@ -34,10 +34,12 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
             </div>
 `
 
-２．hello.jsにページネーション用の実装をする
+**２．hello.jsにページネーション用の実装をする**
 
 ・paginationプラグインを使えるようにする
-・クエリパラメータの利用
-・fetchgPageを実行する
-・collection.paginationを利用
 
+・クエリパラメータの利用
+
+・fetchgPageを実行する
+
+・collection.paginationを利用
