@@ -42,7 +42,7 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 
 ・クエリパラメータの利用
 
-・fetchgPageを実行する
+・fetchPageを実行する
 
 ・collection.paginationを利用
 
