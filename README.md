@@ -22,17 +22,18 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 |rawCount|レコードの総数|
 
 
-`
-      <div>
-                <span><a href="/hello/1">&lt;&lt; First</a></span>
-                ｜
-                <span><a href="/hello/<%= pagination.page - 1 %>">&lt;&lt; prev</a></span>
-                ｜
-                <span><a href="/hello/<%= pagination.page + 1 %>">Next &gt;&gt;</a></span>
-                ｜
-                <span><a href="/hello/<%= pagination.pageCount %>">Last &gt;&gt;</a></span>
-            </div>
-`
+```
+      <div>
+          <span><a href="/hello/1">&lt;&lt; First</a></span>
+          ｜
+          <span><a href="/hello/<%= pagination.page - 1 %>">&lt;&lt; prev</a></span>
+          ｜
+          <span><a href="/hello/<%= pagination.page + 1 %>">Next &gt;&gt;</a></span>
+          ｜
+          <span><a href="/hello/<%= pagination.pageCount %>">Last &gt;&gt;</a></span>
+      </div>
+```
+
 
 **２．hello.jsにページネーション用の実装をする**
 
