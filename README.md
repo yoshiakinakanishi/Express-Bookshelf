@@ -44,3 +44,29 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 ・fetchgPageを実行する
 
 ・collection.paginationを利用
+
+```
+Bookshelf.plugin('pagination'); //★fetchPage追加
+
+router.get('/:page', (req, res, next) => {
+    var pg = req.params.page;
+    pg *= 1;
+    if (pg < 1){ pg = 1; } // 取り出した値を整数にして、1未満だったら1にして正常な値がページ番号に指定されるように調整
+    
+    // fetchPageはfetchAllのページネーション版
+    // pageSizeでそのページで表示するレコード行数が変更できる
+    
+    new MyData().fetchPage({page:pg, pageSize:3}).then((collection) => {
+        var data = {
+            title: 'Hello!',
+            content: collection.toArray(),
+            pagination: collection.pagination
+        };
+        console.log(collection.pagination);
+        res.render('hello/index', data);
+   })
+   .catch((err) => {
+        res.status(500).json({error: true, data: {message: err.message}});
+   });
+});
+```
