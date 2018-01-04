@@ -1,18 +1,24 @@
 # Express-Bookshelf
 
-# Bookshelf
+# Bookshelfの活用
 
-Sqlite3を使ってデータベースアクセスをおこなうのは少数派
+SQLite3を使ってデータベースアクセスをおこなうのは今となっては少数派。
 
-大多数はNode.jsを使ってExpressを使用する場合、Bookshelfを使っており、遥かに効率がいい。
+大半はNode.jsのExpressフレームワークを使用する場合はBookshelfでデータベースのCRUDをして、前者よりも遥かに効率的。
 
-# ページネーション
+# ページネーションの実装
 
-保管されるデータが多くなってきた場合、やはりページネーションは実装しておくのがデファクト
+保管されるデータが多くなってきた場合、ページネーションの実装はマスト。
 
-paginationプラグインを使うと高速で実装できる
+Expressのpaginationプラグインを使うと高速で実現できる（以下の２つの実装を追加するイメージ）
 
-１．views/hello/index.ejsに以下を記述
+１．views/hello/index.ejsに以下のソースを記述
+
+|header1|header2|header3|
+|:--|--:|:--:|
+|align left|align right|align center|
+|a|b|c|
+
 
 `
       <div>
