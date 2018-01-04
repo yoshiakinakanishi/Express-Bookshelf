@@ -12,12 +12,12 @@ SQLite3を使ってデータベースアクセスをおこなうのは今とな�
 
 Expressのpaginationプラグインを使うと高速で実現できる（以下の２つの実装を追加するイメージ）
 
-１．views/hello/index.ejsに以下のソースを記述
+**１．views/hello/index.ejsに以下のソースを記述
 
-|header1|header2|header3|
-|:--|--:|:--:|
-|align left|align right|align center|
-|a|b|c|
+|header1|header2|
+|:--|--:|
+|align left|align right|
+|a|b|
 
 
 `
