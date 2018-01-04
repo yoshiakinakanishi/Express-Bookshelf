@@ -14,10 +14,11 @@ Expressのpaginationプラグインを使うと高速で実現できる（以下
 
 **１．views/hello/index.ejsに以下のソースを記述
 
-|header1|header2|
 |:--|:--|
-|a|b|
-|a|b|
+|page|現在のページ番号|
+|pageCount|ページ数（最後のページ番号）|
+|pageSize|１ページあたりのレコード数|
+|rawCount|レコードの総数|
 
 `
       <div>
